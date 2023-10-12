@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/project/public/css/subvision.css">
+<link rel="stylesheet" href="/public/css/subvision.css">
 <div class="sub">
             <p>
             <div class="sub">
