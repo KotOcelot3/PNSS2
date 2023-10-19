@@ -3,8 +3,8 @@
     padding: 20px;
     margin: 20px;
     flex-direction: column;
-    border: 1px solid #7EC1FF;
-    background-color: #7EC1FF;
+    border: 1px solid #ff827e;
+    background-color: #FF827EFF;
     width: 1200px;
     text-align: center;
 }
@@ -14,7 +14,7 @@
 
 }
 .back_calc button:hover {
-    background-color: #44A4FC;
+    background-color: #fc5344;
 }
 .calc_all {
     display: flex;
@@ -28,8 +28,8 @@
     margin: 20px;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid #7EC1FF;
-    background-color: #7EC1FF;
+    border: 1px solid #FF827EFF;
+    background-color: #FF827EFF;
     align-items: center;
     width: 1200px;
 }
@@ -38,9 +38,9 @@
     border-radius: 20px;
 
     cursor: pointer;
-    background-color: #7EC1FF;
+    background-color: #FF827EFF;
     text-decoration: none;
 }
 .but_calc:hover {
-    background-color: #44A4FC;
+    background-color: #fc5344;
 }

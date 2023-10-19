@@ -3,7 +3,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/style.css">
     <title>pnssss</title>
 </head>
 <main>
@@ -18,6 +18,8 @@
                 <p class="Error"><?= $message['name'][0] ?? ''; ?></p>
                 <label class="inreg" > <input type="text" name="spec" placeholder="Специализация"></label>
                 <p class="Error"><?= $message['spec'][0] ?? ''; ?></p>
+                <label class="inreg" > <input type="text" name="surname" placeholder="Фамилия"></label>
+                <p class="Error"><?= $message['surname'][0] ?? ''; ?></p>
                 <label class="inreg" > <input type="password" name="password" placeholder="Пароль"></label>
                 <p class="Error"><?= $message['password'][0] ?? ''; ?></p>
                 <button class="but_log">Зарегистрироваться</button>

@@ -10,7 +10,7 @@ html {
     justify-content: center;
     padding: 5px;
     box-sizing: border-box;
-    background-color: #7EC1FF;
+    background-color: #FF827EFF;
 
 }
 .nav a {
@@ -47,8 +47,8 @@ html {
     display: flex;
     padding: 70px;
     flex-direction: column;
-    border: 1px solid #7EC1FF;
-    background-color: #7EC1FF;
+    border: 1px solid #FF827EFF;
+    background-color: #FF827EFF;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ html {
     width: 1200px;
 }
 .but_logs:hover {
-    background: #44A4FC;
+    background: #FF827EFF;
     margin: 5px;
     border: 1px solid  black;
     cursor: pointer;
@@ -86,7 +86,7 @@ html {
     color: black;
 }
 .but_log:hover {
-    background: #44A4FC;
+    background: #fc5344;
     margin: 5px;
     border: 1px solid  black;
     cursor: pointer;
@@ -98,7 +98,7 @@ html {
 .fot_back{
     display: flex;
     box-sizing: border-box;
-    background-color: #7EC1FF;
+    background-color: #FF827EFF;
     color: white;
     padding: 5px;
     width: 100%;
@@ -125,8 +125,8 @@ html {
     display: flex;
     padding: 70px;
     flex-direction: column;
-    border: 1px solid #7EC1FF;
-    background-color: #7EC1FF;
+    border: 1px solid #FF827EFF;
+    background-color: #FF827EFF;
     border-radius: 20px;
     align-items: center;
     justify-content: center;

@@ -105,7 +105,7 @@ class Site
 
             $validator = new Validator($request->all(), [
                 'name' => ['required', 'cyrillic'],
-                'spec' => ['required', 'latinNumber'],
+                'spec' => ['required'],
                 'password' => ['required', 'latinNumber']
             ], [
                 'required' => 'Поле :field пусто',
