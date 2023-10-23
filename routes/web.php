@@ -19,7 +19,8 @@ Route::add('GET', '/DiagnosisDetail', [Controller\Site::class, 'DiagnosisView'])
 
 Route::add('GET', '/RecordList', [Controller\Site::class, 'RecordList'])->middleware('auth');
 Route::add('GET', '/RecordDetail', [Controller\Site::class, 'RecordView'])->middleware('auth');
-Route::add(['GET', 'POST'], '/AddRecord', [Controller\Site::class, 'CreateRecord'])->middleware('auth');
+Route::add(['GET', 'POST'], '/AddRecordAdmin', [Controller\Site::class, 'CreateRecordAdmin'])->middleware('auth');
+Route::add(['GET', 'POST'], '/AddRecordUser', [Controller\Site::class, 'CreateRecordUser'])->middleware('auth');
 
 Route::add('GET', '/Subdivisions2', [Controller\Site::class, 'Subdivisions2'])->middleware('auth');
 Route::add('GET', '/Subdivisions3', [Controller\Site::class, 'Subdivisions3'])->middleware('auth');
