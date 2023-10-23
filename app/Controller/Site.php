@@ -127,13 +127,13 @@ class Site
     }
 
 
-    public function CreateRecord(Request $request): string
+    public function CreateRecordAdmin(Request $request): string
     {
 
         if ($request->method === 'POST') {
 
             $validator = new Validator($request->all(), [
-                'title' => ['required', 'cyrillic'],
+                'title' => ['required'],
                 'patient' => ['required', 'latinNumber'],
                 'doctor' => ['required', 'latinNumber'],
                 'diagnosis' => ['required', 'latinNumber'],
@@ -149,13 +149,43 @@ class Site
 
                 $record = Record::create($request->all());
                 $record->save();
-                app()->route->redirect('/RecordList');
+                return (new View())->render('site.RecordDetail', ['record' => $record]);
             }
         }
 
         return new View('site.AddRecord');
     }
 
+
+        public function CreateRecordUser(Request $request): string
+    {
+
+        if ($request->method === 'POST') {
+
+            $validator = new Validator($request->all(), [
+                'title' => ['required'],
+                'patient' => ['required', 'latinNumber'],
+                'doctor' => ['required', 'latinNumber'],
+                'diagnosis' => ['required', 'latinNumber'],
+            ], [
+                'required' => 'Поле :field пусто',
+                'cyrillic' => 'Поле :field может состоять из кириллицы и латиницы',
+                'latinNumber' => 'Поле :field должно состоять из латинских букв или цифр',
+            ]);
+
+            if($validator->fails()){
+                return new View('site.AddRecord', ['message' => $validator->errors()]);
+            }   else{
+
+                $record = Record::create($request->all());
+                $record->save();
+                return (new View())->render('site.RecordDetailUser', ['record' => $record]);
+            }
+        }
+
+        return new View('site.AddRecord');
+    }
+    
 
     public function SpecView(Request $request): string
     {
