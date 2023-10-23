@@ -16,7 +16,7 @@
         if (app()->auth::check() && app()->auth::user()->role !== 1):
             ?>
             <a href="<?= app()->route->getUrl('/SpecializationList') ?>">Список специальностей</a>
-            <a href="<?= app()->route->getUrl('/AddRecord') ?>">Добавление Записи</a>
+            <a href="<?= app()->route->getUrl('/AddRecordUser') ?>">Добавление Записи</a>
             <a href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
         <?php
         elseif (!app()->auth::check()):
@@ -30,7 +30,7 @@
             <a href="<?= app()->route->getUrl('/DiagnosisList') ?>">Список диагнозов</a>
             <a href="<?= app()->route->getUrl('/RegisterDoctor') ?>">Добавление Врача</a>
             <a href="<?= app()->route->getUrl('/SpecializationList') ?>">Список специальностей</a>
-            <a href="<?= app()->route->getUrl('/AddRecord') ?>">Добавление Записи</a>
+            <a href="<?= app()->route->getUrl('/AddRecordAdmin') ?>">Добавление Записи</a>
             <a href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
         <?php
         endif;
